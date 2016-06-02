@@ -1,0 +1,15 @@
+Preparing virtual environment for django:
+- python3 + pip
+sudo python3 -m pip install virtualenv virtualenvwrapper
+
+vi ~/.bash_aliases:
+alias python=python3
+export WORKON_HOME=$HOME/.virtualenv
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+source /usr/local/bin/virtualenvwrapper.sh
+
+test it:
+mkvirtualenv test
+deactivate test
+workon test
+
